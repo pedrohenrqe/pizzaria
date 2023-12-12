@@ -1,0 +1,31 @@
+body{
+    background-image: url(../img/pizza-2.webp);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+body::after{
+    content: '';
+    display: block;
+    position: fixed;
+    background: var(--gradiente-laranja);
+    inset: 0;
+    margin: auto;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (min-width: 1200px) {
+    
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body::after{
+        background: var(--laranja);
+        opacity: 0.5;
+    }
+
+}

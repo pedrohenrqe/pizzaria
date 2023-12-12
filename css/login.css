@@ -1,0 +1,170 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr 10vh;
+    padding: 25px 20px 35px 20px;
+    font-family: var(--fonte-principal);
+}
+
+header img{
+    max-width: 80vw;
+    height: 15vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--branco);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text h1{
+    font-weight: 500;
+    font-size: 2rem;
+    width: 70%;
+}
+
+.text p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+main form{
+    padding: 0 12px;
+    display: grid;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.input{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: var(--branco);
+    bottom: -8px;
+}
+
+.input input, .input input::placeholder{
+    color: var(--branco);
+    font-weight: 300;
+    width: 100%;
+}
+
+.container-botao{
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+form button{
+    place-self: center center;
+    width: 100% !important;
+}
+
+form span{
+    place-self: center right;
+    padding-right: 5%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+}
+
+footer span{
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+footer a{
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+@media (min-width: 1200px) {
+    
+    body{
+        grid-template-rows: auto 1fr auto;
+        padding: 3rem 0 3rem 0;
+    }
+
+    header, main, footer{
+        width: 45vw;
+        padding: 0 9vw;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{
+        height: 100%;
+        justify-content: center;
+        gap: 5vh;
+    }
+
+    main form{
+        padding: 0;
+    }
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .text h1{
+        font-size: 2.25rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text p{
+        font-size: 1.25rem;
+        text-align: justify;
+    }
+    
+    .input img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .input input, .input input::placeholder{
+        font-size: 1.2rem;
+    }
+
+    form button{
+        padding-block: 1rem !important;
+        font-size: 1.5rem !important;
+    }
+    
+    footer span{
+        font-size: 1rem;
+    }
+    
+    footer a{
+        font-size: 1.5rem;
+    }
+
+}

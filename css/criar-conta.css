@@ -1,0 +1,183 @@
+body{
+    font-family: var(--fonte-principal);
+    display: grid;
+    grid-template-rows: 10vh 1fr;
+    height: 100vh;
+}   
+
+header{
+    padding: 5vh 1.5rem 0 1.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    z-index: 1;
+}
+
+#voltar{
+    display: flex;
+    gap: 1.5rem;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding-bottom: 0.75rem;
+    width: fit-content;
+}   
+
+main{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: var(--branco);
+    margin-top: calc(15vh + 1.5rem);
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#imagem-usuario{
+    width: 15vh;
+    height: 15vh;
+    padding: 12px;
+    position: relative;
+    background-color: var(--cinza-usuario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(calc(-100% - 1.5rem));
+    margin-bottom: calc(-15vh - 1rem);
+}
+
+#imagem-usuario img{
+    width: 70%;
+    height: 70%;
+}
+
+#imagem-usuario label{
+    position: absolute;
+    background-color: var(--vermelho);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0.3rem;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#imagem-usuario label img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#imagem-usuario input{
+    display: none;
+}
+
+main form fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+    width: 100%;
+}
+
+main form fieldset div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.30rem;
+    position: relative;
+}
+
+main form fieldset div label{
+    color: var(--cinza);
+    font-size: 0.75rem;
+}
+
+main form fieldset div input{
+    color: #000;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+main form fieldset div:not(:first-child)::after{
+    content: '';
+    display: block;
+    width: 100%;
+    min-height: 1px;
+    position: absolute;
+    background-color: var(--cinza-usuario);
+    bottom: -0.75rem;
+}
+
+@media (min-width: 1200px) {
+    
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }   
+    
+    header{
+        display: none;
+    }   
+    
+    main{
+        width: 40vw;
+        padding: 3.25rem 1.5rem;
+        margin-top: 0;
+        border-radius: 2rem;
+    }
+    
+    main form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
+    #imagem-usuario{
+        transform: translateY(0);
+        margin-bottom: 0;
+    }
+
+    #imagem-usuario label img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    main form fieldset div{
+        width: 100%;
+        gap: 0.5rem;
+    }    
+
+    main form fieldset div label{
+        font-size: 1rem;
+    }
+
+    
+    main form fieldset div input{
+        font-size: 1rem;
+    }
+
+    form button{
+        margin-top: 3.2rem;
+    }
+
+}

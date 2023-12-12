@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/header-background.css">
+    <link rel="stylesheet" href="../css/criar-conta.css">
+    <script src="../js/voltar.js" defer></script>
+    <script src="../js/criar-conta.js" defer></script>
+    <title>Criar Conta - Tony Pizzaria</title>
+</head>
+<body>
+    <header>
+        <button id="voltar">
+            <img src="../img/icons/Voltar.svg" alt="Seta para voltar">
+            <h3> Criar Conta </h3>
+        </button>
+    </header>
+    <main>
+        <fieldset>
+            <div id="imagem-usuario">
+                <img src="../img/icons/User.svg" alt="Usuário">
+                <label for="foto-perfil" id="botao-foto"> <img src="../img/icons/Camera.svg" alt="Câmera"> </label>
+                <input id="foto-perfil" type="file">
+            </div>
+            <div>
+                <label for="name"> Nome do Usuário </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email"> Endereço de e-mail </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="password"> Senha </label>
+                <input type="password" name="password" id="password" required minlength="4">
+            </div>
+            <div>
+                <label for="password"> Confirmação de Senha </label>
+                <input type="password" name="password-confirmation" id="password-confirmation" required>
+            </div>
+            <div>
+                <label for="telephone"> Telefone </label>
+                <input type="tel" name="telephone" id="telephone" required minlength="11">
+            </div>
+        </fieldset>
+        <button class="botao botao-verde" id="criar-conta">
+            Criar Conta
+        </button>
+    </main>
+</body>
+</html>

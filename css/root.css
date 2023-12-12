@@ -1,0 +1,16 @@
+:root{
+    --laranja: #F27706;
+    --branco: #ffffff;
+    --verde: #199570;
+    --verde-claro: #23CB98;
+    --vermelho: #F93030;
+    --vermelho-hover: #fc3838;
+    --cinza: #999999;
+    --cinza-claro: #F5F5F5;
+    --cinza-comentario: #AEA6A6;
+    --cinza-usuario: #C4C4C4;
+    --bege: #F4E2D1;
+    --gradiente-laranja: linear-gradient(180deg, rgba(252,121,0,0.85) 35%, rgba(252,121,0,0) 100%);
+    --gradiente-laranja-desktop: linear-gradient(180deg, rgba(252,121,0,1) 5%, rgba(255,153,60,0.85) 50%, rgba(252,121,0,1) 95%);
+    --fonte-principal: 'Roboto', sans-serif;
+}
